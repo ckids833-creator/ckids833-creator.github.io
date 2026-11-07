@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Pre-launch under a placeholder name: remove noindex when the product name is final. -->
+    <meta name="robots" content="noindex" />
+    <title>DocFlow TH: ตรวจเอกสารจัดซื้อก่อนจ่ายเงิน</title>
+    <meta
+      name="description"
+      content="ผู้ช่วยอ่านและตรวจเอกสารจัดซื้อสำหรับโรงงานและผู้ค้าอะไหล่อุตสาหกรรม"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-row">
+        <span class="brand">DocFlow TH</span>
+        <span class="tag" data-en="In development, not open yet">กำลังพัฒนา ยังไม่เปิดให้ใช้งาน</span>
+        <fieldset class="lang" aria-label="ภาษา / Language">
+          <button type="button" data-lang="th">ไทย</button>
+          <button type="button" data-lang="en">EN</button>
+        </fieldset>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap hero">
+        <h1 data-en="Check every purchasing document before you pay">ตรวจเอกสารจัดซื้อให้ครบ ก่อนจ่ายเงิน</h1>
+        <p
+          class="lead"
+          data-en="Send quotations, purchase orders, tax invoices or delivery notes by LINE, email or web. It reads them, checks the amounts, VAT and prices, and tells you which ones need a look."
+        >
+          ส่งใบเสนอราคา ใบสั่งซื้อ ใบกำกับภาษี หรือใบส่งของ ทาง LINE อีเมล หรือเว็บ
+          ระบบจะอ่านข้อมูล ตรวจยอดเงิน VAT และราคา แล้วบอกว่าใบไหนต้องดู
+        </p>
+      </section>
+
+      <section class="demo" aria-labelledby="demo-title">
+        <div class="wrap">
+          <h2 id="demo-title" data-en="See the checks at work">ดูตัวอย่างการตรวจจริง</h2>
+          <p
+            class="section-note"
+            data-en="All 6 documents are fictional, but the results are real output from the system, read by a small test AI model. AI makes mistakes, so the checks have to catch them."
+          >
+            เอกสารทั้ง 6 ฉบับเป็นข้อมูลสมมติ แต่ผลด้านล่างเป็นผลจริงจากระบบ โดยใช้ AI รุ่นเล็กสำหรับทดสอบเป็นตัวอ่าน
+            AI อ่านผิดได้ ระบบตรวจจึงต้องจับให้ได้
+          </p>
+          <div id="tabs" class="tabs" role="tablist" aria-labelledby="demo-title"></div>
+          <div id="panel" class="panel" role="tabpanel"></div>
+          <noscript>
+            <p>เปิด JavaScript เพื่อดูตัวอย่าง / Turn on JavaScript to see the examples.</p>
+          </noscript>
+        </div>
+      </section>
+
+      <section class="wrap band" aria-labelledby="how-title">
+        <h2 id="how-title" data-en="How it will work">ขั้นตอนการทำงาน</h2>
+        <ol class="steps">
+          <li>
+            <h3 data-en="Send the document">ส่งเอกสาร</h3>
+            <p data-en="Forward it by LINE or email, or upload it. Photos and PDFs both work.">
+              ส่งต่อทาง LINE อีเมล หรืออัปโหลด ได้ทั้งรูปถ่ายและ PDF
+            </p>
+          </li>
+          <li>
+            <h3 data-en="AI reads it">AI อ่านข้อมูล</h3>
+            <p data-en="Supplier, tax ID, items, prices, VAT and totals, in Thai and English.">
+              ผู้ขาย เลขผู้เสียภาษี รายการสินค้า ราคา VAT และยอดรวม ทั้งภาษาไทยและอังกฤษ
+            </p>
+          </li>
+          <li>
+            <h3 data-en="The checks run">ระบบตรวจ</h3>
+            <p data-en="The numbers must agree with each other. Anything doubtful goes to a person, never straight through.">
+              ตัวเลขทุกช่องต้องสอดคล้องกัน ช่องที่ไม่มั่นใจจะส่งให้คนตรวจ ไม่ผ่านอัตโนมัติ
+            </p>
+          </li>
+          <li>
+            <h3 data-en="You get the result">ได้ผลลัพธ์</h3>
+            <p data-en="A short LINE summary, plus Excel and CSV files for your accounts.">
+              สรุปสั้น ๆ ทาง LINE พร้อมไฟล์ Excel และ CSV สำหรับงานบัญชี
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="wrap band" aria-labelledby="checks-title">
+        <h2 id="checks-title" data-en="What gets checked">สิ่งที่ระบบตรวจ</h2>
+        <dl class="checks">
+          <div>
+            <dt data-en="Amounts add up">ยอดเงินถูกต้อง</dt>
+            <dd data-en="Quantity × price, line totals, discounts and the grand total.">จำนวน × ราคา ยอดแต่ละรายการ ส่วนลด และยอดรวมทั้งสิ้น</dd>
+          </div>
+          <div>
+            <dt data-en="VAT is right">VAT ถูกต้อง</dt>
+            <dd data-en="7% of the amount before VAT, or inside VAT-inclusive prices.">7% ของยอดก่อน VAT รวมถึงราคาที่รวม VAT แล้ว</dd>
+          </div>
+          <div>
+            <dt data-en="Amount in words">จำนวนเงินตัวอักษร</dt>
+            <dd data-en="The Thai words must say the same amount as the numbers.">ตัวอักษรภาษาไทยต้องตรงกับตัวเลข</dd>
+          </div>
+          <div>
+            <dt data-en="Tax ID">เลขผู้เสียภาษี</dt>
+            <dd data-en="13 digits with a valid check digit.">ครบ 13 หลัก และเลขหลักสุดท้ายถูกต้อง</dd>
+          </div>
+          <div>
+            <dt data-en="Buyer and seller">ผู้ซื้อและผู้ขาย</dt>
+            <dd data-en="Addressed to your company, with the two not swapped.">ออกในนามบริษัทของคุณ และไม่สลับกัน</dd>
+          </div>
+          <div>
+            <dt data-en="Tax invoice details">รายละเอียดใบกำกับภาษี</dt>
+            <dd data-en="Required details are present, so input VAT isn't put at risk.">มีข้อมูลสำคัญครบ เพื่อไม่ให้เสียสิทธิ์ภาษีซื้อ</dd>
+          </div>
+          <div>
+            <dt data-en="Price changes">ราคาเปลี่ยน</dt>
+            <dd data-en="Compared with the PO and the last price; alerts when a price goes up.">เทียบกับ PO และราคาครั้งก่อน แจ้งเตือนเมื่อราคาสูงขึ้น</dd>
+          </div>
+          <div>
+            <dt data-en="Duplicates">เอกสารซ้ำ</dt>
+            <dd data-en="The same file or document number, to avoid paying twice.">ไฟล์หรือเลขที่เอกสารซ้ำ เพื่อกันการจ่ายเงินซ้ำ</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p data-en="All companies and documents on this page are fictional. AI output must be reviewed before payment or tax filing.">
+          บริษัทและเอกสารทั้งหมดในหน้านี้เป็นข้อมูลสมมติ ผลจาก AI ต้องตรวจสอบก่อนชำระเงินหรือยื่นภาษี
+        </p>
+        <p data-en="This page sets no cookies and uses no trackers.">หน้านี้ไม่ใช้คุกกี้และไม่มีตัวติดตาม</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
